@@ -24,36 +24,36 @@
 <div class="section">
 
   <form name="qrForm">
-    <span>TypeNumber:</span>
-    <select name="t"></select>
-    <span>ErrorCorrectionLevel:</span>
-    <select name="e">
+    <span style="display: none;">TypeNumber:</span>
+    <select name="t" style="display: none;"></select>
+    <span style="display: none;">ErrorCorrectionLevel:</span>
+    <select name="e" style="display: none;">
       <option value="L">L(7%)</option>
       <option value="M" selected="selected">M(15%)</option>
       <option value="Q">Q(25%)</option>
       <option value="H">H(30%)</option>
     </select>
-    <span>Mode:</span>
-    <select name="m">
+    <span style="display: none;">Mode:</span>
+    <select name="m" style="display: none;">
       <option value="Numeric">Numeric</option>
       <option value="Alphanumeric">Alphanumeric</option>
       <option value="Byte" selected>Byte</option>
       <option value="Kanji">Kanji</option>
     </select>
-    <span>Multibyte:</span>
-    <select name="mb">
+    <span style="display: none;">Multibyte:</span>
+    <select name="mb" style="display: none;">
       <option value="default">None</option>
       <option value="SJIS">SJIS</option>
       <option value="UTF-8" selected>UTF-8</option>
     </select>
     <br/>
-    <textarea name="msg" rows="10" cols="40">here comes qr!</textarea>
+    <textarea name="msg" rows="5" cols="20">Borrar este texto y poner el alu en el siguiente formato "alu0101046444"</textarea>
     <br/>
     <input type="button" value="update" onclick="update_qrcode()"/>
     <div id="qr"></div>
   </form>
-  <h3>Appendix (data capacity in bytes)</h3>
-  <div id="dataCaps"></div>
+  <h3 style="display: none;">Appendix (data capacity in bytes)</h3>
+  <div id="dataCaps" style="display: none;"></div>
 </div>
 
 <div class="section">
